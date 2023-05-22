@@ -1,4 +1,4 @@
-# WeatherApp_React
+# WeatherApp
 Weather App with React and Vite
 
 # Weather App
