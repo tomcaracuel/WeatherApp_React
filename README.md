@@ -10,5 +10,9 @@ This is a simple weather application built with Vite and React. It allows users 
 * WeatherAPI.com: Provides accurate and up-to-date weather information.
 
 
-https://github.com/tomcaracuel/WeatherApp_React/assets/66931754/f288c1df-34af-43e9-9f55-5eb5382757f2
+
+
+
+
+https://github.com/tomcaracuel/WeatherApp_React/assets/66931754/286a4e86-a372-4d19-bfe5-32ed1588e21f
 
