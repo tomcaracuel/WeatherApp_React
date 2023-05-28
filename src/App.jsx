@@ -32,7 +32,7 @@ export default function App() {
     setLoading(true) 
 
     try {
-      if (!city.trim()) throw { message: "El campo ciudad es obligatorio" } 
+      if (!city.trim()) throw { message: "The city field is required" } 
 
       const res = await fetch(API_WEATHER + city) 
       const data = await res.json() 
