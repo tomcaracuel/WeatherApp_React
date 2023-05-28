@@ -1,10 +1,11 @@
 import { LoadingButton } from "@mui/lab" 
 import { Box, Container, TextField, Typography } from "@mui/material" 
-import { useState } from "react" 
+import { useState } from "react"
+import './App.scss'
 
 const API_WEATHER = `http://api.weatherapi.com/v1/current.json?key=${
   import.meta.env.VITE_API_KEY
-}&lang=es&q=` 
+}&lang=en&q=` 
 
 
 
@@ -31,7 +32,7 @@ export default function App() {
     setLoading(true) 
 
     try {
-      if (!city.trim()) throw { message: "El campo ciudad es obligatorio" } 
+      if (!city.trim()) throw { message: "The city field is required" } 
 
       const res = await fetch(API_WEATHER + city) 
       const data = await res.json() 
@@ -60,18 +61,11 @@ export default function App() {
 
 
   return (
-    <Container
-      maxWidth="xs"
-      sx={{ mt: 2 }}
-    >
-      <Typography
-        variant="h3"
-        component="h1"
-        align="center"
-        gutterBottom
-      >
-        Weather App
-      </Typography>
+    <div className="background">
+    <div className="Container">
+      <div className="Typography">
+        <h1>Weather App</h1>
+      </div>
       <Box
         sx={{ display: "grid", gap: 2 }}
         component="form"
@@ -80,7 +74,7 @@ export default function App() {
       >
         <TextField
           id="city"
-          label="Ciudad"
+          label="City"
           variant="outlined"
           size="small"
           required
@@ -94,9 +88,9 @@ export default function App() {
           type="submit"
           variant="contained"
           loading={loading}
-          loadingIndicator="Buscando..."
+          loadingIndicator="Searching..."
         >
-          Buscar
+          Search
         </LoadingButton>
       </Box>
 
@@ -143,11 +137,12 @@ export default function App() {
         Powered by:{" "}
         <a
           href="https://www.weatherapi.com/"
-          title="Weather API"
+          title="Weather API" target="_blank"
         >
           WeatherAPI.com
         </a>
       </Typography>
-    </Container>
+    </div>
+    </div>
   ) 
 }
