@@ -14,5 +14,4 @@ This is a simple weather application built with Vite and React. It allows users 
 
 
 
-https://github.com/tomcaracuel/WeatherApp_React/assets/66931754/286a4e86-a372-4d19-bfe5-32ed1588e21f
-
+https://github.com/tomcaracuel/WeatherApp_React/assets/66931754/46a7a158-6438-4db8-9ab5-698e508e2073
