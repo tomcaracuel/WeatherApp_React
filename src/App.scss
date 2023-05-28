@@ -6,6 +6,16 @@
     width: 100vw;
     height: 100vh;
     background-color: rgb(127, 214, 255);
+
+    @media screen and (max-width: 600px) {
+
+
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgb(127, 214, 255);
+
+    }
     
 .Container{
     background-color: rgb(255, 217, 0);
@@ -22,6 +32,27 @@
     margin-right: auto;
     position: relative;
     box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+
+    @media screen and (max-width: 600px) {
+
+        background-color: rgb(255, 217, 0);
+        padding: 30px 50px;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        border-radius: 2%;
+        width: 300px;
+        height: 650px;
+        justify-content: center;
+        margin: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+
+
+    }
+
+    
 
     .Typography{
         border-radius: 10px 10px 0 0;
@@ -44,6 +75,35 @@
             margin-left: 35%;
             margin-right: auto;
         }
+
+        @media screen and (max-width: 600px) {
+
+            border-radius: 10px 10px 0 0;
+            position: absolute;
+            top: -2px;
+            left: -1px;
+            width: 300px;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            border: 2px solid black;
+            background-color: white;
+
+            h1{
+                font-family: 'IBM Plex Mono', monospace;
+                font-size: 25px;
+                justify-content: center;
+                align-items: center;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 20%;
+            }
+
+            
+
+
+
+        }
         
     }
     
@@ -51,4 +111,7 @@
 
 }
 
+
+
 }
+
